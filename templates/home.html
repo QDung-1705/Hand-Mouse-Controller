@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 40px;
+        }
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .login {
+            background-color: #3498db;
+        }
+        .register {
+            background-color: #2ecc71;
+        }
+        .btn:hover {
+            filter: brightness(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Chào mừng đến với Hand Mouse Controller</h1>
+    <a href="{{ url_for('login') }}"><button class="btn login">Đăng nhập</button></a>
+    <a href="{{ url_for('register') }}"><button class="btn register">Đăng ký</button></a>
+</body>
+</html>
